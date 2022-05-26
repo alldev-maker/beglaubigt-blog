@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="description" content="beglaubigt.de" />
         <link rel="icon" href="/favicon.ico" />
 
         <link href="/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
