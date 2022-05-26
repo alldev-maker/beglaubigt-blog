@@ -1,0 +1,87 @@
+{
+  "slices": {
+    "components": {
+      "seo_slice": {
+        "library": "slices",
+        "id": "seo_slice",
+        "name": "SeoSlice",
+        "description": "SeoSlice",
+        "model": {
+          "id": "seo_slice",
+          "type": "SharedSlice",
+          "name": "SeoSlice",
+          "description": "SeoSlice",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SeoSlice",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Meta Title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Meta Description"
+                  }
+                },
+                "keyword": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Keyword",
+                    "placeholder": "Meta Keyword"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "seo_slice",
+            "items": [],
+            "primary": {
+              "title": "synergize web-enabled content",
+              "description": "implement next-generation markets",
+              "keyword": "streamline efficient platforms",
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      }
+    }
+  }
+}

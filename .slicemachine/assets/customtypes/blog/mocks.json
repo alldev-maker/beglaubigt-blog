@@ -1,0 +1,50 @@
+{
+  "id": "c194897c-1eee-4072-ad3b-c430432d55a9",
+  "uid": "non-dolorem-assumenda",
+  "type": "blog",
+  "data": {
+    "title": "architect front-end portals",
+    "summary": "deploy strategic networks",
+    "previewImg": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Laboris ad et aute irure eu nostrud laborum velit eiusmod. Voluptate aute laboris dolore consectetur adipisicing eiusmod reprehenderit Lorem Lorem. Fugiat aute fugiat ad officia velit id do cillum consectetur voluptate nulla irure.",
+        "spans": []
+      }
+    ],
+    "publishDate": "2018-01-17",
+    "publisherAvatar": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+    },
+    "publisherName": "productize innovative networks",
+    "tags": [
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "tag": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ]
+  }
+}

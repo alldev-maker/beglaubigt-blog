@@ -1,0 +1,21 @@
+{
+  "_cts": {
+    "blog": {
+      "tags": {},
+      "content": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "tag": {}
+  },
+  "slices": {
+    "SeoSlice": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

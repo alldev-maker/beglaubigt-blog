@@ -1,0 +1,296 @@
+.container {
+  @include mq("desktop") {
+    max-width: 1440px;
+  }
+}
+
+article {
+  background: #ffffff;
+  box-shadow: 0px 0px 80px rgba(12, 35, 69, 0.03);
+  border-radius: 2.47px;
+  margin-bottom: 40px;
+  .article-brief {
+    padding: 25px 35px;
+    .article-title {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .article-summary {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #0c2345;
+      @include mq("tablet", max) {
+        display: none;
+      }
+    }
+  }
+
+  @include mq("tablet", max) {
+    margin-bottom: 25px;
+  }
+}
+.article1 {
+  article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
+    .article-img {
+      width: calc(50% - 15px);
+      img,
+      span {
+        height: 100% !important;
+        @include mq("tablet", max) {
+          width: 100%;
+          height: 200px !important;
+        }
+      }
+    }
+    .article-brief {
+      width: 50%;
+      padding: 35px;
+      @include mq("tablet", max) {
+        width: 100%;
+      }
+      .article-title {
+        font-size: 34.87px;
+        line-height: 47px;
+        @include mq("tablet", max) {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+    @include mq("tablet", max) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .article-img {
+        width: 100%;
+      }
+    }
+  }
+}
+.article2 {
+  article {
+    .article-brief {
+      .article-title {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      .article-summary {
+        @include mq("laptop", max) {
+          display: none;
+        }
+      }
+    }
+    .article-img {
+      img,
+      span {
+        height: 216px !important;
+        width: 100%;
+        @include mq("laptop", max) {
+          height: 200px !important;
+        }
+      }
+    }
+  }
+}
+.article3 {
+  article {
+    .article-img {
+      img,
+      span {
+        height: 200px !important;
+        width: 100%;
+      }
+    }
+    .article-brief {
+      .article-summary {
+        display: none;
+      }
+    }
+  }
+}
+
+.blog-section {
+  &__title {
+    text-align: center;
+    font-size: 43.87px;
+    line-height: 59.44px;
+    margin-bottom: 90px;
+    @include mq("tablet", max) {
+      margin-bottom: 78px;
+    }
+  }
+  .blog-count {
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 24.56px;
+    color: #0c2345;
+    span {
+      background: #ffffff;
+      box-shadow: 0px 0px 4px rgba(12, 35, 69, 0.1);
+      border-radius: 8px;
+      padding: 2px 8px;
+      margin-left: 10px;
+      line-height: 24.56px;
+      color: #0c2345;
+    }
+  }
+}
+
+.blog-detail {
+  max-width: 966px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .blog-title {
+    font-weight: 400;
+    font-size: 34.87px;
+    line-height: 47px;
+    text-align: center;
+    max-width: 649px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+    margin-bottom: 33px;
+  }
+  .publish-date {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 153.5%;
+    color: #0c2345;
+    @include mq("phone", max) {
+      font-size: 15px;
+    }
+  }
+  .summary {
+    p {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 153.5%;
+      color: #0c2345;
+    }
+  }
+  .blog-content {
+    margin-top: 50px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    strong,
+    pre,
+    i,
+    li {
+      color: #0c2345;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+    a {
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-position: below;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+      margin-left: 40px;
+      @include mq("phone", max) {
+        margin-left: 20px;
+      }
+    }
+    pre {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 24.87px;
+      line-height: 30px;
+      white-space: normal;
+      padding-left: 30px;
+      border-left: 2px solid #0c2345;
+      margin-left: 30px;
+      @include mq("phone", max) {
+        padding-left: 15px;
+        margin-left: 15px;
+        font-size: 20px;
+      }
+    }
+  }
+  .back-link {
+    text-align: center;
+    margin-top: 40px;
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 153.5%;
+      color: #0c2345;
+      background: #ffffff;
+      box-shadow: 0px 0px 4px rgba(12, 35, 69, 0.1);
+      border-radius: 8px;
+      padding: 2px 9px;
+    }
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  &__avatar {
+    border-radius: 50%;
+  }
+  &__name {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 153.5%;
+    color: #0c2345;
+    margin-bottom: 0;
+    margin-left: 20px;
+    @include mq("phone", max) {
+      font-size: 15px;
+    }
+  }
+}
+
+.tag {
+  padding: 2px 9px;
+  margin-right: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(12, 35, 69, 0.1);
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 153.5%;
+  color: #0c2345;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+//Select Style
+// .css-9w693z-control {
+//   .css-1aot9sf-singleValue {
+//     color: #1a5cbf;
+//   }
+// }
