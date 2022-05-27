@@ -323,10 +323,10 @@ body {
 }
 
 /*
-  .navbar-contact .star-each {
-      height: 22px;
-  }
-  */
+.navbar-contact .star-each {
+    height: 22px;
+}
+*/
 
 .phone {
   display: flex;
@@ -508,8 +508,7 @@ a.dropdown-items-small strong {
   padding: 12px 30px 16px 0;
 }
 .nav-link-arrow {
-  background: url(../public/images/step-icon/right-arrow.svg) no-repeat right
-    center;
+  background: url(/images/step-icon/right-arrow.svg) no-repeat right center;
   padding: 0 40px 0 0;
   font-size: 14px;
   font-weight: bold;
@@ -631,7 +630,7 @@ a.dropdown-items-small strong {
 
 .banner {
   padding: 198px 0 88px;
-  background-image: url("../public/images/gif/GIF_07_v2.gif");
+  background-image: url("/images/gif/GIF_07_v2.gif");
   background-size: 638px 592px;
   background-repeat: no-repeat;
   background-position: calc(100% + 18px) 94px;
@@ -761,22 +760,22 @@ a.dropdown-items-small strong {
 }
 
 .point-list li:nth-of-type(1) h3::after {
-  background-image: url(../public/images/function-001.png);
+  background-image: url(/images/function-001.png);
 }
 
 .point-list li:nth-of-type(2) h3::after {
-  background-image: url(../public/images/function-002.png);
+  background-image: url(/images/function-002.png);
 }
 
 .point-list li:nth-of-type(3) h3::after {
-  background-image: url(../public/images/function-003.png);
+  background-image: url(/images/function-003.png);
 }
 
 .point-list p::before {
   content: "";
   width: 8px;
   min-height: 160px;
-  background-image: url(../public/images/dash.png);
+  background-image: url(/images/dash.png);
   background-repeat: repeat-y;
   position: absolute;
   top: 9px;
@@ -1114,7 +1113,7 @@ a.dropdown-items-small strong {
   right: 0;
   width: 15px;
   height: 15px;
-  background-image: url("../public/images/check.png");
+  background-image: url("/images/check.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1164,7 +1163,7 @@ a.dropdown-items-small strong {
   position: absolute;
   bottom: 48px;
   right: 63px;
-  background-image: url("../public/images/arrow-down.png");
+  background-image: url("/images/arrow-down.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1372,7 +1371,7 @@ a.dropdown-items-small strong {
   padding: 120px 0 130px;
 }
 .sub-banner-img {
-  background-image: url(../public/images/subpage-banner.png);
+  background-image: url(/images/subpage-banner.png);
   background-position: right 0;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -2013,8 +2012,7 @@ textarea.form-control {
   color: #0c2345 !important;
 }
 .glowCookies__banner__1 .read__more span {
-  background: url(../public/images/icon/right-arrow-smal.png) no-repeat center
-    center;
+  background: url(/images/icon/right-arrow-smal.png) no-repeat center center;
   width: 13px;
   height: 13px;
   display: inline-block;
@@ -2079,12 +2077,12 @@ textarea.form-control {
   background-size: 100%;
 }
 .icon-trust {
-  background-image: url(../public/images/icon-shield-small.png);
+  background-image: url(/images/icon-shield-small.png);
   width: 23px;
   height: 23px;
 }
 .icon-padlock {
-  background-image: url(../public/images/icon-padlock-small.png);
+  background-image: url(/images/icon-padlock-small.png);
   width: 23px;
   height: 23px;
 }
@@ -2345,12 +2343,11 @@ ul.list-items li::before {
   left: 0;
 }
 .form-stepmenu li.active::before {
-  background: url(../public/images/step-icon/right-arrow.svg) no-repeat center
-    center;
+  background: url(/images/step-icon/right-arrow.svg) no-repeat center center;
   background-size: 100%;
 }
 .form-stepmenu li.done::before {
-  background: url(../public/images/step-icon/check.svg) no-repeat center center;
+  background: url(/images/step-icon/check.svg) no-repeat center center;
   background-size: 9px;
 }
 .form-stepmenu li.active a,
@@ -2444,7 +2441,7 @@ ul.list-items li::before {
   height: 16px;
   vertical-align: middle;
   display: inline-block;
-  background: url(../public/images/step-icon/right-arrow.svg) no-repeat 0 center;
+  background: url(/images/step-icon/right-arrow.svg) no-repeat 0 center;
   background-size: 100%;
   margin-right: 8px;
   margin-bottom: 2px;

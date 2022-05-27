@@ -44,13 +44,6 @@ const Header = () => (
                   width="20"
                 />
                 <img src="/images/translate.png" width="17" /> [AT]
-                {/* <Image src='{Austria}' alt="me" width="20" layout="fill" /> */}
-                {/* <Image
-                  src="/images/translate.png"
-                  alt="me"
-                  width="17"
-                  layout="fill"
-                /> */}
               </a>
               <div className="dropdown-menu" aria-labelledby="translatemenu">
                 <div className="dropdown-container">

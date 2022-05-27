@@ -18,7 +18,7 @@ const Footer = () => (
             <a href="43316722215">Per Rückruf</a>
           </li>
           <li>
-            <a href="https://beglaubigt.de"> beglaubigt.de © 2022</a>
+            <a href="/"> beglaubigt.de © 2022</a>
           </li>
         </ul>
         <ul className="link-list">
