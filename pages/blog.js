@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { createClient } from "../prismicio";
-
-import Layout from "../components/layout";
 import Select, { components } from "react-select";
+
+import AppContext from "./appContext";
+import Layout from "../components/layout";
 import BlogList from "../components/blog/blog-list";
 
 function filterBlog(blogs, tag) {
@@ -22,16 +23,14 @@ const DropdownIndicator = (props) => {
 };
 
 const Blog = ({ blogs, tags }) => {
-  const tagOptions = [{ value: "All", label: "All" }];
-  for (let i = 0; i < tags.length; i++)
-    tagOptions.push({ value: tags[i].id, label: tags[i].data.name });
+  const context = useContext(AppContext);
+  let { tagOptions, tag } = context.state;
 
   const [blogList, setBlogList] = useState([]);
   const [count, setCount] = useState(blogs.length);
-  const [tag, setTag] = useState(tagOptions[0]);
 
   const handleTag = (selected) => {
-    setTag(selected);
+    context.setTag(selected);
   };
 
   useEffect(() => {
@@ -41,7 +40,7 @@ const Blog = ({ blogs, tags }) => {
     }
     setBlogList(blogArr);
     setCount(filterBlog(blogs, tag).length);
-  }, [blogs, tags, tag]);
+  }, [blogs, tagOptions, tag]);
 
   return (
     <Layout>
