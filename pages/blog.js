@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { createClient } from "../prismicio";
 import Select, { components } from "react-select";
 
-import AppContext from "./appContext";
+import AppContext from "../appContext";
 import Layout from "../components/layout";
 import BlogList from "../components/blog/blog-list";
 

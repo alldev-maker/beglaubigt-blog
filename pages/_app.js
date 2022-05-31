@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
-import AppContext from "./appContext";
+import AppContext from "../appContext";
 import { linkResolver, repositoryName } from "../prismicio";
 
 import "../styles/styles.css";

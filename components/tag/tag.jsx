@@ -1,6 +1,6 @@
 import { useContext, useCallback } from "react";
 import { useRouter } from "next/router";
-import AppContext from "../../pages/appContext";
+import AppContext from "../../appContext";
 
 const TagItem = ({ tagData, allTags }) => {
   const context = useContext(AppContext);
